@@ -6,21 +6,12 @@ import { Login } from '../Login';
 // eslint-disable-next-line
 import { Profile } from '../Profile/Profile';
 import { Auth } from '../types';
-<<<<<<< HEAD
-
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
-=======
+import Cookies from 'universal-cookie';
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
->>>>>>> meet1
+
 import StudentPage from '../Studentpage/StudentPage';
 import LoggedIn from '../LoggedIn/LoggedIn';
-import { useHistory } from 'react-router';
-
-import { DemoLogin } from '../DemoLogin';
-
-
 
 const LS_KEY = 'login-with-metamask:auth';
 
@@ -42,6 +33,9 @@ export class App extends React.Component<{}, State> {
 
   handleLoggedIn = (auth: Auth) => {
     localStorage.setItem(LS_KEY, JSON.stringify(auth));
+
+    const cookies = new Cookies();
+    cookies.set('auth', auth, { path: '/' });
     this.setState({ auth });
 
     // @ts-ignore

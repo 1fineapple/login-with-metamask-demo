@@ -7,11 +7,13 @@ import { Auth } from '../types';
 const portis = new Portis('211b48db-e8cc-4b68-82ad-bf781727ea9e', 'rinkeby');
 const web3 = new Web3(portis.provider);
 
+
 interface Props {
   onLoggedIn: (auth: Auth) => void;
 }
 
 // let web3: Web3 | undefined = undefined; // Will hold the web3 instance
+
 
 export class Login extends React.Component<Props> {
   state = {

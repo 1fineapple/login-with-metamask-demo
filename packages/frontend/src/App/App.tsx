@@ -10,8 +10,8 @@ import Cookies from 'universal-cookie';
 // eslint-disable-next-line
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import StudentPage from '../Studentpage/StudentPage';
-import LoggedIn from '../LoggedIn/LoggedIn';
+import { StudentPage } from '../Studentpage/StudentPage';
+import { LoggedIn } from '../LoggedIn/LoggedIn';
 
 const LS_KEY = 'login-with-metamask:auth';
 

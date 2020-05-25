@@ -22,49 +22,6 @@ To stake the DAI,  the web3 library used:
 adding objects to pass DAI and interact with the smart contract. 
 
 
-#### Launching the demo using Docker:
-
-Build and launch the backend:
-
-```bash
-cd backend
-docker build -t login-backend .
-docker run -d -p 8000:8000 login-backend
-```
-
-Build and launch the frontend:
-
-```bash
-cd frontend
-docker build -t login-front .
-docker run -d -p 3000:3000 login-frontend
-```
-
-You can then access the app on `localhost:3000`.
-
-#### Start the demo using Yarn:
-
-From the root folder of this repo, run
-
-```bash
-yarn install # Install the dependencies
-yarn start # Will launch the frontend and the backend at the same time
-```
-
-The backend should be running on `localhost:8000`, and the frontend on `localhost:3000`.
-
-Alternatively, you can start the frontend and the backend separately:
-
-```bash
-# Start the backend
-cd packages/backend
-yarn start
-
-# Start the frontend
-cd packages/frontend
-yarn start
-```
-
 
 ## Credits
 

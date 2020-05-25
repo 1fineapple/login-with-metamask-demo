@@ -5,7 +5,7 @@
 [![David (frontend)](<https://img.shields.io/david/amaurymartiny/login-with-metamask-demo.svg?label=deps%20(frontend)&path=packages/frontend>)](https://david-dm.org/amaurymartiny/login-with-metamask-demo?path=packages/frontend)
 [![](https://img.shields.io/badge/Buy%20me%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://offset.earth/amaurymartiny)
 
-This demo is published as part of the corresponding blog article: ["One-Click Login with Blockchain: a MetaMask Tutorial"](https://www.toptal.com/ethereum/one-click-login-flows-a-metamask-tutorial).
+Learn more as part of the corresponding blog article: ["One-Click Login with Blockchain: a MetaMask Tutorial"](https://www.toptal.com/ethereum/one-click-login-flows-a-metamask-tutorial).
 
 Users must be authenticated to Learn and Earn. Once the extension button is clicked, we authenticate users by requiring them to sign up or sign in through Portis. Once integrated with an email and password, Portis manages a students private key inside their existing browser → Learn and Earn leverages Portis's end to end encryption architecture for security and participation. 
 
